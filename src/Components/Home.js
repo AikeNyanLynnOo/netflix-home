@@ -65,7 +65,7 @@ function Home() {
               fontWeight: 600,
             }}
           >
-            Sign in
+            Sign in / Login
           </Button>
         </Box>
 
@@ -133,7 +133,7 @@ function Home() {
             />
             <Button
               variant="contained"
-              color="error"
+              color="warning"
               size="large"
               sx={{
                 textTransform: "capitalize",
@@ -167,20 +167,6 @@ function Home() {
           background: "#000000",
         }}
       >
-        {/* <PromoSection
-          isTextFirst={true}
-          title="title"
-          subTitle="subtitle"
-          src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
-          isVideo={true}
-        />
-        <PromoSection
-          isTextFirst={false}
-          title="title"
-          subTitle="subtitle"
-          src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
-          isVideo={false}
-        /> */}
         {data.map((data, index) => (
           <>
             <PromoSection {...data} key={index} />
